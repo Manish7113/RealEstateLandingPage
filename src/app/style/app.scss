@@ -1,0 +1,53 @@
+.LinkButton{
+    text-decoration: none;
+    color: navy;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #abdbeb , 	#f5f5dc);
+
+    &:hover {
+        color: white;
+        // animation: button-hover-animation 0.1s ease-in;
+      }
+
+
+}
+@keyframes button-hover-animation {
+    from { transform: scale(1); } /* Start at normal scale */
+    to { transform: scale(1.2); } /* End at the hover scale (1.4x) */
+  }
+
+
+  .gradientLeftToRight{
+    background-image: linear-gradient(to right, #abdbeb ,#f2e6d9);
+  }
+
+
+  //// ----------------------------- landing page banner
+
+  .landingPageBanner{
+    button{
+        font-size: .8em;
+        width: max-content;
+    }
+   
+  }
+
+  .top-heading{
+    font-size: 4em;
+    line-height: 65px;
+  }
+  .subHeading{
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
+  .heading-description{
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
