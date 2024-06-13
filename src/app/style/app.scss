@@ -87,6 +87,17 @@
     }
    }
   }
+
+  //------------------------------------- featured
+
+  .checkPoints{
+    // font-size: 1em;
+    font-weight: 500;
+  }
+  .checkIcons{
+    width: 24px;
+    height: 24px;
+  }
  
 
 
@@ -133,6 +144,10 @@
     font-weight: 600;
     line-height: 25px;
   }
+  .card-descritption{
+    font-size: .8rem;
+    font-weight: 600;
+   }
 
 
   // ------------- colors 
@@ -147,4 +162,18 @@
   .purple{
     color: #674ea7;
     
+} 
+
+// ---------------------------- font size 
+.one-rem{
+  font-size: 1rem;
+  
+}
+.p-eight-rem{
+  font-size: .8rem;
+  
+}
+.p-nine-rem{
+  font-size: .9rem;
+  
 }
