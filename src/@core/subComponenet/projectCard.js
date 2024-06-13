@@ -1,16 +1,20 @@
 import Image from "next/image";
 import HomeOne from '../../assets/images/HomeOne.png'
 import HomeThree from '../../assets/images/HomeThree.jpg'
+import ghar1 from '../../assets/images/ghar1.jpg'
 
 export default function ProjectCard(props){
-    // const {valueImage} = props
-    // console.log(valueImage , 'images')
+    const {valueImage, heading} = props
+    console.log(valueImage , 'images')
     return (
         <div className=" m-3 productCard rounded-3 ">
-              <Image className="product-img rounded-3 " src={HomeThree} alt="Not ofund" ></Image>
+        
+              <Image className="product-img rounded-3 " src={ghar1} alt="Not mmmmmmmmmmmmm" ></Image>
               <div className="p-3 d-flex flex-column gap-3">
                 <div className="d-flex justify-content-between gap-3">
-                <p className="cardHeading"> Welcome To GK Association </p>
+                <p className="cardHeading"> 
+                    {heading}
+                </p>
                 <p className=" rating"> 4.83</p>
 
                 </div>

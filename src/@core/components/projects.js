@@ -1,6 +1,12 @@
 'use client'
 import ProjectCard from "../subComponenet/projectCard"
 import HomeOne from '../../assets/images/HomeOne.png'
+import Ghar1 from '../../assets/images/ghar1.jpg'
+import Ghar2 from '../../assets/images/ghar2.jpg'
+import Ghar3 from '../../assets/images/ghar3.jpg'
+import Ghar4 from '../../assets/images/ghar4.jpg'
+import Ghar5 from '../../assets/images/ghar5.jpg'
+
 import Image from "next/image"
 import React from 'react';
 
@@ -49,11 +55,11 @@ export default function Projects() {
                 pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
             >
-                <SwiperSlide><ProjectCard valueImage={{HomeOne}}></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{HomeOne}}></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{HomeOne}}></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{HomeOne}}></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{HomeOne}}></ProjectCard></SwiperSlide>
+                <SwiperSlide><ProjectCard valueImage={{Ghar1}} heading='this is Manish'></ProjectCard></SwiperSlide>
+                <SwiperSlide><ProjectCard valueImage={{Ghar2}} heading='this is Papa'></ProjectCard></SwiperSlide>
+                <SwiperSlide><ProjectCard valueImage={{Ghar3}} heading='this is Muma'></ProjectCard></SwiperSlide>
+                <SwiperSlide><ProjectCard valueImage={{Ghar4}} heading='this is behan'></ProjectCard></SwiperSlide>
+                <SwiperSlide><ProjectCard valueImage={{Ghar5}} heading='this is behan 2'></ProjectCard></SwiperSlide>
                 
                 {/* Add more slides as needed */}
             </Swiper>
