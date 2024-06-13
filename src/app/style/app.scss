@@ -1,10 +1,31 @@
 .loaderAnimation{
   box-sizing: border-box;
-
   height: 100vh;
   overflow: hidden;
 }
 
+:root{
+  --color : 	#777777;
+  --backroundColor : #ffcddd;
+}
+
+[data-theme="dark"]{
+  --color : 		#222333;
+  --backroundColor : #883ab3;
+}
+[data-theme="primary"]{
+  --color : 			#fff73b;
+  --backroundColor : #ff6e0a;
+}
+
+.testingBox{
+  width: 100px;
+  height: 100px;
+  background-color: var(--backroundColor);
+  color: var(--color);
+  padding: 10px;
+  margin: 10px;
+}
 
 
 
@@ -36,6 +57,11 @@
   .gradientLeftToRight{
     background-image: linear-gradient(to right, #abdbeb ,#f2e6d9);
   }
+
+  // for the dark mode 
+  // .gradientLeftToRight{
+  //   background-image: linear-gradient(to right, #282829 ,#d5d5d4);
+  // }
 
 
   //// ----------------------------- landing page banner
