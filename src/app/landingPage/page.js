@@ -9,6 +9,7 @@ import Footer from '@/@core/components/footer.js'
 export default function LandingPage() {
     return (<>
 
+        <div className=''>
         <HomeBanner></HomeBanner>
         <AboutUs></AboutUs>
         <div className='my-5'></div>
@@ -23,6 +24,7 @@ export default function LandingPage() {
         <HomeBanner></HomeBanner>
         <div className='my-5'></div>
         <Footer></Footer>
+        </div>
         
 
 
