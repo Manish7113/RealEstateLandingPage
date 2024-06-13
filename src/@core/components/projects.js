@@ -11,7 +11,7 @@ export default function Projects(){
             <p className="component-heading">Everything should be this easy.</p>
 
             </div>
-            <div className="d-flex  flex-wrap">
+            <div className="d-flex  ">
                 <ProjectCard valueImage={{HomeOne}}></ProjectCard>
                 <ProjectCard valueImage={{HomeOne}}></ProjectCard>
                 <ProjectCard valueImage={{HomeOne}}></ProjectCard>

@@ -98,7 +98,10 @@
     width: 24px;
     height: 24px;
   }
- 
+ // --------------------------------------- footer
+ .min-width{
+  min-width: max-content;
+ }
 
 
   // ------------------------------------------------------------------
@@ -147,6 +150,13 @@
   .card-descritption{
     font-size: .8rem;
     font-weight: 600;
+   }
+
+   .footerText{
+    font-size: 1rem;
+    color: #5d5c5c;
+    font-weight: 500;
+
    }
 
 

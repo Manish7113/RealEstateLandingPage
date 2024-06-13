@@ -4,6 +4,7 @@ import Projects from '../../@core/components/projects.js'
 import Features from '@/@core/components/features.js'
 import Ambission from '@/@core/components/ambission.js'
 import Blogs from '@/@core/components/blogs.js'
+import Footer from '@/@core/components/footer.js'
 
 export default function LandingPage() {
     return (<>
@@ -20,6 +21,9 @@ export default function LandingPage() {
         <Blogs></Blogs>
         <div className='my-5'></div>
         <HomeBanner></HomeBanner>
+        <div className='my-5'></div>
+        <Footer></Footer>
+        
 
 
     </>)

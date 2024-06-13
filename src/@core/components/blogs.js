@@ -12,7 +12,7 @@ export default function Blogs(){
             <p className="component-heading">Read our latest blogs.</p>
 
             </div>
-            <div className="d-flex  flex-wrap">
+            <div className="d-flex  ">
                 <BlogCard valueImage={{HomeOne}}></BlogCard>
                 <BlogCard valueImage={{HomeOne}}></BlogCard>
                 <BlogCard valueImage={{HomeOne}}></BlogCard>

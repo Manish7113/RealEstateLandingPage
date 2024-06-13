@@ -2,7 +2,7 @@ import Image from "next/image";
 import officeMetting from '../../assets/images/OfficeMetting.png'
 
 export default function Ambission() {
-    return <div>
+    return <div className="container">
         {/* upper  */}
         <div className="d-flex flex-column justify-content-center align-items-center" >
             <p className="secondarySubHeading p-0 m-0">Who we are?</p>
@@ -10,7 +10,7 @@ export default function Ambission() {
 
         </div>
         {/* lower */}
-        <div className="container row d-flex justify-content-center">
+        <div className=" row d-flex justify-content-center">
             <div className="col-12 col-xl-6 col-lg-6 col-md-12  col-sm-12  col-xs-12">
                <div className="container">
                <p className="block-heading mt-2">
