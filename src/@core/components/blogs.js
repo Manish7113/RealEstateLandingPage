@@ -31,6 +31,56 @@ export default function Blogs() {
             spaceBetween: 10,
         },
     };
+
+
+    const BlogsData  = [
+        {
+        image : '/images/ghar11.jpg',
+        heading : 'About the House',
+        date:'Nov 21, 2023',
+        mainHeading : 'How well did property experts forecasets singapores',
+        timing : `4:30`,
+        by : 'J.k Thomas',
+        readMore : true
+      },
+        {
+        image : '/images/ghar10.jpg',
+        heading : 'Recently selled Mahal',
+        date:'Apr 21, 2023',
+        mainHeading : 'Should to know that how the mahal sold by denied',
+        timing : `5:26`,
+        by : 'RM Singh',
+        readMore : true
+      },
+        {
+        image : '/images/ghar9.jpg',
+        heading : 'Have a beach Banglow ',
+        date:'Aug 20, 2024',
+        mainHeading : 'Having a banglow with beach is status symbol',
+        timing : `5:26`,
+        by : 'Ts Chodhary',
+        readMore : true
+      },
+        {
+        image : '/images/ghar8.jpg',
+        heading : 'Many names banglow ...',
+        date:'jun 12, 2024',
+        mainHeading : 'Banglow , mention , kothi and Mahal ...',
+        timing : `11:00`,
+        by : 'Ts Sharma',
+        readMore : true
+      },
+        {
+        image : '/images/ghar6.jpg',
+        heading : 'Many names banglow ...',
+        date:'jun 12, 2024',
+        mainHeading : 'Banglow , mention , kothi and Mahal ...',
+        timing : `11:00`,
+        by : 'Ts Sharma',
+        readMore : true
+      },
+
+    ]
     return (
         <div className="d-flex flex-column projects">
             <div className="container d-flex flex-column ">
@@ -47,12 +97,13 @@ export default function Blogs() {
                     pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 >
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
-                    <SwiperSlide><BlogCard valueImage={{ HomeOne }}></BlogCard></SwiperSlide>
+                    {
+                        BlogsData?.map((item, index) =>(
+                            <SwiperSlide key={index}><BlogCard data={item}></BlogCard></SwiperSlide>
+
+                        ))
+                    }
+                    
                    
 
                     {/* Add more slides as needed */}

@@ -21,7 +21,7 @@ export default function Projects() {
         // when window width is >= 640px
         300: {
           slidesPerView: 1.3,
-          spaceBetween: 10,
+          spaceBetween: 5,
         },
         640: {
           slidesPerView: 1.2,
@@ -38,6 +38,50 @@ export default function Projects() {
           spaceBetween: 10,
         },
       };
+
+
+      const projectsData  = [
+        {
+        image : '/images/ghar1.jpg',
+        heading : 'The House',
+        rating : 4.5,
+        description : 'Charming 2-bedroom bungalow seeks new owner! Bright living space with hardwood floors, updated kitchen with stainless steel appliances. Relax on the',
+        price  : 455,
+        available : 'day'
+      },
+        {
+        image : '/images/ghar2.jpg',
+        heading : 'Villa of Rajputs',
+        rating : 4.9,
+        description : 'Relax on the private patio overlooking a peaceful garden. Perfect for first-time buyers or those seeking a cozy retreat. Move-in ready!',
+        price  : 7501,
+        available : 'Month'
+      },
+        {
+        image : '/images/ghar3.jpg',
+        heading : 'The Haveli',
+        rating : 4.6,
+        description : 'subscribe to our newsletter for regular updates so that you can know more information about us subscribe to our newsletter for regular updates so ',
+        price  : 1000,
+        available : 'Month'
+      },
+        {
+        image : '/images/ghar4.jpg',
+        heading : 'Ancient Designed House',
+        rating : 4.1,
+        description : 'Charming 2-bedroom bungalow seeks new owner! Bright living space with hardwood floors, updated kitchen with stainless steel appliances. Relax on the',
+        price  : 1200,
+        available : 'Day'
+      },
+        {
+        image : '/images/ghar5.jpg',
+        heading : 'Resourte',
+        rating : 5,
+        description : 'Charming 2-bedroom bungalow seeks new owner! Bright living space with hardwood floors, updated kitchen with stainless steel appliances. Relax on the',
+        price  : 100,
+        available : 'Day'
+      },
+    ]
     return (
         <div className="d-flex flex-column projects">
             <div className="container d-flex flex-column ">
@@ -47,19 +91,20 @@ export default function Projects() {
             </div>
             
             <div className="w-100">
+              
 
             <Swiper
                 breakpoints={breakpoints}
-                spaceBetween={20}
+                spaceBetween={10}
                 // navigation
                 pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
             >
-                <SwiperSlide><ProjectCard valueImage={{Ghar1}} heading='this is Manish'></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{Ghar2}} heading='this is Papa'></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{Ghar3}} heading='this is Muma'></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{Ghar4}} heading='this is behan'></ProjectCard></SwiperSlide>
-                <SwiperSlide><ProjectCard valueImage={{Ghar5}} heading='this is behan 2'></ProjectCard></SwiperSlide>
+              {projectsData?.map((item, index)=>(
+                <SwiperSlide key={index}><ProjectCard data={item}></ProjectCard></SwiperSlide>
+              ))}
+                
+              
                 
                 {/* Add more slides as needed */}
             </Swiper>
