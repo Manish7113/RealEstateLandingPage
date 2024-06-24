@@ -8,6 +8,7 @@ import Blogs from '@/@core/components/blogs.js'
 import Footer from '@/@core/components/footer.js'
 import BrickLoader from '@/@core/components/brickLoader.js'
 import { useEffect, useState } from 'react'
+import Navbar from '@/@core/components/navBar.js'
 
 export default function LandingPage() {
 
@@ -79,6 +80,7 @@ export default function LandingPage() {
 
             </div> */}
 
+            <Navbar></Navbar>
             <HomeBanner data={{ ...homeLandingPage }}></HomeBanner>
             <AboutUs></AboutUs>
             <div className='my-5'></div>
